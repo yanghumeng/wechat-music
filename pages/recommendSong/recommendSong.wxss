@@ -1,0 +1,103 @@
+/* pages/recommendSong/recommendSong.wxss */
+.recommendSongContainer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+
+.header {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.header image {
+  height: 100%;
+  width: 100%;
+  filter: blur(5rpx);
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.container .date {
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 300rpx;
+  border-radius: 10rpx;
+  color: #ffffff;
+}
+
+.container .listContainer {
+  position: relative;
+  background-color: #ffffff;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+  height: calc(100vh -390rpx);
+  padding: 5rpx 30rpx;
+}
+
+.listHeader {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.changeMore {
+  float: right;
+}
+
+.listScroll {
+  height: calc(100vh - 472rpx);
+}
+
+.scrollItem {
+  height: 120rpx;
+}
+
+.scrollItem .musicImage {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.scrollItem .musicImage image {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.scrollItem .musicContent {
+  font-size: 32rpx;
+  height: 100rpx;
+  padding: 10rpx 20rpx;
+}
+
+.scrollItem .musicContent view {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.musicName,
+.musicAuthor {
+  width: 450rpx;
+}
+
+.music-more {
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 60rpx;
+  text-align: center;
+}
+.musiccount{
+  margin: 20rpx 0 60rpx 0;
+  text-align: center;
+  color: #9e9e9e;
+  font-size: 36rpx;
+}

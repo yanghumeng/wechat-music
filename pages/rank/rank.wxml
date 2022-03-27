@@ -1,0 +1,20 @@
+<view class="index">
+  <!-- <view class="songDetailBg" style="background:url({{bgUrl}})">
+    <view class="bgBlur">
+    </view>
+  </view> -->
+  <musicHeader title="排行榜"></musicHeader>
+  <view class="container">
+    <scroll-view scroll-y="true">
+      <!-- <view class="index-search u-f-ac">
+        <view class="index-search-text iconfont iconsearch"></view>
+        <input type="text" placeholder="搜索歌曲" class="index-search-input" />
+      </view> -->
+      <view class="index-music-list" style="height: calc(100vh - 200rpx)">
+        <view wx:for="{{topmusiclist}}" wx:key="index">
+          <rankMusicList musicitem="{{item}}" listid="{{listid[index]}}"></rankMusicList>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

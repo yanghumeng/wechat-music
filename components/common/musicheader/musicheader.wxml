@@ -1,0 +1,6 @@
+<view class="pageheader">
+  <view class="backToHome" bindtap="handleToBack">
+    <text class="iconfont iconback"></text>
+  </view>
+  <view class="musicName">{{title}}</view>
+</view>

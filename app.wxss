@@ -1,0 +1,12 @@
+@import "/static/iconfont/font.wxss";
+@import "/common/common.wxss";
+/**app.wxss**/
+page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+

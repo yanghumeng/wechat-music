@@ -1,0 +1,22 @@
+<!--pages/video/video.wxml-->
+<view class="videoContainer">
+  <search></search>
+  <view class="swiperheader">
+    <scroll-view scroll-into-view="{{'id'+navId}}" scroll-with-animation="true" scroll-x="true" class="navScroll"
+      enable-flex="true">
+      <view id="{{'id'+item.id}}" class="navItem" wx:for="{{videoGroupList}}" wx:key="id">
+        <view class="navContent {{navId==item.id?'active':''}}" bindtap="changeNav" id="{{item.id}}">
+          {{item.name}}
+        </view>
+      </view>
+    </scroll-view>
+    <ShowError wx:if="{{isShowError}}"></ShowError>
+    <scroll-view wx:else scroll-y="true" class="videoScroll" refresher-enabled="true" bindrefresherrefresh="onPullDownRefresh"
+      refresher-triggered="{{isTriggered}}" bindscrolltolower="onReachBottom">
+      <videoList videolists="{{videoList}}"></videoList>
+      <!-- 上拉加载更多 -->
+      <loadMore loadtext="{{loadtext}}" v-if="videoList.length>=2"></loadMore>
+    </scroll-view>
+
+  </view>
+</view>

@@ -1,0 +1,32 @@
+/* pages/rank.wxss */
+.index {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  background-image: linear-gradient(#9198e5,#e66465);
+}
+.songDetailBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bgBlur {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.205);
+  backdrop-filter: blur(8px);
+}
+.container {
+  width: 100%;
+  height: calc(100vh - 200rpx);
+  margin-top: 120rpx;
+}
+
+/* 音乐模块列表 */
+.index-music-list {
+  margin: 0 30rpx;
+  width: 100%;
+  color: #ffffff;
+}

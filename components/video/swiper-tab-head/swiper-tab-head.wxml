@@ -1,0 +1,14 @@
+<view class="uni-tab-bar">
+		<scroll-view class="uni-swiper-tab" scroll-x>
+			<block wx:for="{{tabBars}}" wx:key="item.id" style="{{scrollStyle}}">
+				<view 
+					class="swiper-tab-list {{tabIndex==index?'active':''}}" 
+					
+					style="{{scrollItemStyle}}"
+        >
+					{{item.name}} {{item.num?item.num:""}}
+				<view class="swiper-tab-line"></view>
+				</view>
+			</block>
+		</scroll-view>
+	</view>

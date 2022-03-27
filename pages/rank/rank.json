@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "rankMusicList":"../../components/rank/rank-music-list/rank-music-list",
+    "musicHeader":"../../components/common/musicheader/musicheader",
+    "ShowError":"../../components/common/show-error/show-error"
+  },
+  "navigationStyle":"custom"
+}

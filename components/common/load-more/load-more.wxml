@@ -1,0 +1,3 @@
+<!--components/common/load-more/load-more.wxml-->
+<!-- 上拉加载更多 -->
+<view class="load-more">{{loadtext}}</view>

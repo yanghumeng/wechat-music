@@ -1,0 +1,4 @@
+<!--components/common/show-error/show-error.wxml-->
+<view class="noRecommend">
+<text class="iconfont iconwarn"></text><text>加载失败</text>
+</view>

@@ -1,0 +1,39 @@
+<wxs src="../../../utils/filter.wxs" module="filter"></wxs>
+<view class="videoItem" wx:for="{{videolists}}" wx:key="index">
+  <view class="index-list">
+    <view class="index-list1 u-f-ac u-f-jsb">
+      <view class="u-f-ac">
+        <image class="userPic" src="{{item.data.creator.avatarUrl}}" mode="aspectFill"></image>
+        {{item.data.creator.nickname}}
+      </view>
+      <view class="u-f-ac">
+        <button open-type="share" class="music-share">
+          <view class="iconfont iconforwardfill">
+          </view>
+        </button>
+      </view>
+    </view>
+    <view class="index-list2">
+      {{item.data.title}}
+    </view>
+    <view class="index-list3">
+      <view class="index-list-play">
+        <video class="index-list-video" wx:if="{{videoId==item.data.vid}}" id="{{item.data.vid}}"
+          bindplay="videoPlayHandle" src="{{item.data.urlInfo.url}}" poster="{{item.data.coverUrl}}"></video>
+        <image wx:else bindtap="videoPlayHandle" id="{{item.data.vid}}" class="index-list-video"
+          src="{{item.data.coverUrl}}">
+        </image>
+      </view>
+    </view>
+    <view class="index-list4 u-f">
+      <view class="u-f-ac">
+        <view class="iconfont iconlike"></view>
+        <text style="font-size:30rpx">{{filter.formatCount(item.data.praisedCount)}}</text>
+      </view>
+      <view class="u-f-ac">
+        <view class="iconfont iconcomment"></view>
+        <text style="font-size:30rpx">{{filter.formatCount(item.data.commentCount)}}</text>
+      </view>
+    </view>
+  </view>
+</view>

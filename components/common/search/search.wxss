@@ -1,0 +1,56 @@
+/* components/common/search/search.wxss */
+@import "../../../static/iconfont/font.wxss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 96%;
+  margin: 16rpx auto;
+
+}
+
+.header .right-content,
+.left-content {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #7978f6; */
+}
+
+.left-content text {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #7978f6;
+  font-size: 70rpx;
+  border: 0;
+  color: #ffffff;
+  line-height: 70rpx;
+}
+.right-content text {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  font-size: 70rpx;
+  border: 0;
+  color: #7978f6;
+  line-height: 70rpx;
+}
+
+.search {
+  border-radius: 2em;
+  background-color: #F7F7F7;
+  width: 75%;
+  color: #7978f6;
+  padding: 16rpx 0;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  font-size: 30rpx;
+}

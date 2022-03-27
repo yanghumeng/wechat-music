@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "NavHeader":"/components/index/nav-header",
+    "search":"../../components/common/search/search",
+    "ShowError":"../../components/common/show-error/show-error"
+  },
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "musicHeader":"../../components/common/musicheader/musicheader",
+    "ShowError":"../../components/common/show-error/show-error"
+  },
+  "navigationStyle":"custom"
+}

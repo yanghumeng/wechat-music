@@ -1,0 +1,25 @@
+<!--pages/register/register.wxml-->
+<view class="registerContainer">
+  <view class="logo">
+    <image src="../../static/images/personal/missing-face.png"></image>
+  </view>
+  <view class="input-content">
+    <view class="inputItem">
+      <text class="tit">手机号码</text>
+      <input type="text" placeholder="手机号"/>
+    </view>
+    <view class="inputItem">
+      <text class="tit">密码</text>
+      <input type="password" placeholder="密码"/>
+    </view>
+    <button class="confirmBtn">注册</button>
+  </view>
+  <view class="otherLogin">
+    <text class="otherlogintitle">关联社交账号快速登录方式</text>
+    <view class="otherLoginImg">
+      <text style="color:#1296db" class="iconfont iconqq"></text>
+      <text style="color:#33af08" class="iconfont iconwechat"></text>
+      <text style="color:#d32711" class="iconfont iconweibo"></text>
+    </view>
+  </view>
+</view>

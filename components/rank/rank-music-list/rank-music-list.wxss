@@ -1,0 +1,44 @@
+/* components/rank/rank-musci-list/rank-music-list.wxss */
+/* 音乐模块列表 */
+.index-item {
+  margin-bottom: 35rpx;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.index-item-image {
+  width: 210rpx;
+  height: 210rpx;
+  position: relative;
+  border-radius: 30rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+
+.index-item-image image {
+  width: 100%;
+  height: 100%;
+}
+
+.index-item-image text {
+  left: 12rpx;
+  bottom: 12rpx;
+  position: absolute;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 26rpx;
+}
+
+.index-item-text {
+  font-size: 24rpx;
+  line-height: 66rpx !important;
+}
+.index-item-text-title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 400rpx;
+}

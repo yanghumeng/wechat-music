@@ -1,0 +1,11 @@
+<!--components/rank/rank-musci-list/rank-music-list.wxml-->
+<view class="index-item u-f-ac" bindtap="handleToList(musicitem.id)">
+  <view class="index-item-image">
+    <image src="{{musicitem.coverImgUrl}}"></image>
+    <text>{{musicitem.updateFrequency}}</text>
+  </view>
+  <view class="index-item-text">
+    <view class="index-item-text-title" wx:for="{{musicitem.tracks}}" wx:key="index">
+      {{index+1}}.{{item.first}}-{{item.second}}</view>
+  </view>
+</view>

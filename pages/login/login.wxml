@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="wrapper">
+    <view class="left-top-sign">LOGIN</view>
+    <view class="welcome">
+      欢迎回来！
+    </view>
+    <view class="input-content">
+      <view class="input-item">
+        <view class="tit">手机号码</view>
+        <!-- <input  type="text" placeholder="请输入手机号码" data-test="abc" data-type="phone" id="phone" bindinput="handleInput"/> -->
+        <input  type="text" placeholder="请输入手机号码"  id="phone" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <view class="tit">密码</view>
+        <input type="password"  placeholder="请输入密码"  id="password" bindinput="handleInput"/>
+      </view>
+    </view>
+    <button class="confirm-btn" bindtap="login">登录</button>
+    <view class="forget-section" bindtap="toForgotPassword">
+      忘记密码?
+    </view>
+    <!-- <button class="confirm-btn" bindtap="wxlogin" open-type="getUserInfo">微信登录</button> -->
+  </view>
+  <view class="register-section">
+    还没有账号?
+    <text bindtap="toRegister">马上注册</text>
+  </view>
+</view>

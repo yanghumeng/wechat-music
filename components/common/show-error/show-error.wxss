@@ -1,0 +1,10 @@
+/* components/common/show-error/show-error.wxss */
+@import "/static/iconfont/font.wxss";
+.noRecommend{
+  width: 100%;
+  padding: 20rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #838383;
+}

@@ -1,0 +1,62 @@
+@import "/static/iconfont/font.wxss";
+@import "/common/common.wxss";
+
+.index-list {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.index-list1 {
+  color: #999999;
+}
+
+
+.userPic {
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 100%;
+  margin-right: 10rpx;
+}
+
+.index-list2 {
+  padding-top: 15rpx;
+  font-size: 32rpx;
+}
+
+.index-list3 {
+  padding-top: 15rpx;
+}
+
+.index-list4 {
+  padding: 15rpx 0;
+  color: #999999;
+  display: flex;
+}
+
+.index-list4 view {
+  margin: 0 10rpx;
+
+}
+
+.index-list-play {
+  font-size: 140rpx;
+  color: #FFFFFF;
+  z-index: 1000;
+  width: 100%;
+  height: 400rpx;
+}
+
+.index-list-video {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 20rpx;
+}
+
+.music-share {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: auto !important;
+  height: auto !important;
+  color: #9E9E9E;
+}

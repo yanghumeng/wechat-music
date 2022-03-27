@@ -1,0 +1,78 @@
+/* pages/register/register.wxss */
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: 100rpx 0;
+}
+.input-content{
+  padding: 0 60rpx;
+}
+.inputItem{
+  display:flex; 
+  align-items:flex-start;
+  justify-content: center;
+  padding: 0 30rpx;
+  background:#f8f6fc;
+  height: 90rpx;
+  border-radius: 4px;
+  margin-bottom: 40rpx;
+}
+
+.inputItem:last-child{
+  margin-bottom: 0; 
+}
+.inputItem .tit{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 38rpx;
+  color: #606266;
+  width: 28%;
+}
+.inputItem input{
+  margin-left: 20rpx;
+  height: 90rpx;
+  font-size: 38rpx;
+  color: #303133;
+  width: 72%;
+}
+.confirmBtn{
+  width: 630rpx!important;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
+  margin-top: 70rpx;
+  background: #7978f6;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 10rpx 0;
+}
+.otherlogintitle{
+  display: flex;
+  justify-content: center;
+  color:#999;
+  padding: 35rpx 0;
+  font-size: 35rpx;
+}
+.otherLoginImg{
+  display: flex;
+  justify-content: center;
+}
+.otherLoginImg text{
+  font-size: 50rpx;
+  margin: 20rpx 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #eee;
+}

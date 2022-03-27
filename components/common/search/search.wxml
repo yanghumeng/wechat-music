@@ -1,0 +1,12 @@
+<!--components/common/search/search.wxml-->
+<view class="header">
+  <view class="left-content" bindtap="qiandao">
+    <text class="iconfont iconqiandao"></text>
+  </view>
+  <view class="search" bindtap="toSearch">
+    搜索
+  </view>
+  <view class="right-content">
+    <text class="iconfont iconnotice"></text>
+  </view>
+</view>

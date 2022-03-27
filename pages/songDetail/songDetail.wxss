@@ -1,0 +1,145 @@
+/* pages/songDetail/songDetail.wxss */
+.songDetailContainer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #999;
+}
+
+.songDetailBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.bgBlur {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.songDetailContent {
+  top: 60rpx;
+  position: relative;
+  margin: 0 auto;
+  height: calc(100vh - 140rpx);
+
+}
+
+.author {
+  color: #9e9e9e;
+}
+
+.needle {
+  position: relative;
+  left: 60rpx;
+  height: 274rpx;
+  width: 192rpx;
+  z-index: 1;
+  transform-origin: 46rpx 18rpx;
+  transform: rotate(-20deg);
+  transition: transform 1s;
+}
+
+.needleTr {
+  height: 54rpx;
+  width: 54rpx;
+  background-color: rgb(241, 241, 241);
+  position: absolute;
+  top: 48rpx;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.playactive {
+  transform: rotate(0deg);
+}
+
+.discContainer {
+  position: relative;
+  top: -120rpx;
+  height: 598rpx;
+  width: 598rpx;
+}
+
+.disc {
+  height: 598rpx;
+  width: 598rpx;
+}
+
+.discAnimation {
+  animation: disc 5s linear infinite;
+  animation-delay: 1s;
+}
+
+ @keyframes disc { 
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+.musicImage {
+  position: absolute;
+  border-radius: 50%;
+  height: 360rpx;
+  width: 360rpx;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.progressControl {
+  color: #9e9e9e;
+  font-size: 30rpx;
+  bottom: 200rpx;
+  position: absolute;
+}
+
+.musicControl {
+  width: 100%;
+  position: absolute;
+  bottom: 40rpx;
+}
+
+.musicControl text {
+  color: #ffffff;
+  width: 20%;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 50rpx;
+  text-align: center;
+}
+
+.musicControl view {
+  text-align: center;
+}
+
+.musicControl text.big {
+  font-size: 60rpx;
+  background: rgb(123, 123, 123, 0.7);
+  padding: 20rpx;
+  border-radius: 50%;
+}
+
+.barControl {
+  width: 450rpx;
+  margin: 0 20rpx;
+}
+
+/* .bar{
+  width: 100rpx;
+  height: 100%;
+  background-color: #ffffff;
+} */
+wx-slider .wx-slider-handle-wrapper {
+  height: 4rpx;
+}

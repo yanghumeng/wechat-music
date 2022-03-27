@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "musicHeader":"../../components/common/musicheader/musicheader"
+  },
+  "navigationStyle":"custom"
+}

@@ -1,0 +1,42 @@
+<!--pages/recommendSong/recommendSong.wxml-->
+<view class="recommendSongContainer">
+
+  <view class="header">
+    <image src="../../static/images/recommendheaderbg.jpg" mode="aspectFill"></image>
+  </view>
+  <view class="container">
+    <musicHeader title="每日推荐"></musicHeader>
+    <view class="date">
+      <text style="font-size:40rpx;font-weight:bolder">{{day}} / </text>
+      <text>{{month}}</text>
+    </view>
+    <view class="listContainer">
+      <view class="listHeader">
+        <text>播放全部</text>
+        <text class="changeMore">多选</text>
+      </view>
+      <scroll-view scroll-y class="listScroll">
+        <ShowError wx:if="{{isShowError}}"></ShowError>
+        <view wx:else>
+          <view class="scrollItem u-f-ac" wx:for="{{recommendList}}" wx:key="id" id="{{item.id}}" data-index="{{index}}"
+            bindtap="toSongDetail">
+            <view class="musicImage">
+              <image src="{{item.album.picUrl}}" mode="aspectFill" lazy-load></image>
+            </view>
+            <view class="musicContent u-f1 u-f u-f-jsb u-f-column">
+              <view class="musicName">{{item.name}}</view>
+              <view class="musicAuthor">
+                <text wx:for="{{item.artists}}" wx:for-item="authorItem" wx:key="id">{{authorItem.name}} </text>
+              </view>
+            </view>
+            <view class="music-more">
+              <text class="iconfont icongengduo"></text>
+            </view>
+          </view>
+          <view class="musiccount">{{musicCount}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+</view>

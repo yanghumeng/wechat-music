@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "videoList":"../../components/video/video-list/video-list",
+    "loadMore":"../../components/common/load-more/load-more",
+    "search":"../../components/common/search/search",
+    "ShowError":"../../components/common/show-error/show-error"
+  },
+  "navigationBarTitleText": "视频"
+}

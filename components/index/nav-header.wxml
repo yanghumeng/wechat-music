@@ -1,0 +1,10 @@
+<!--components/index/recommend-item.wxml-->
+<view>
+  <view class="header">
+      <text class="title">{{title}}</text>
+      <view class="content">
+        <text>{{content}}</text>
+        <text class="more">更多></text>
+      </view>
+    </view>
+</view>

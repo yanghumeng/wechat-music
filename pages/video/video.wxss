@@ -1,0 +1,26 @@
+/* pages/video/video.wxss */
+.videoContainer{
+  width: 100%;
+  height: 100vh;
+}
+.videoScroll{
+  height: calc(100vh - 182rpx);
+}
+
+.navScroll{
+  display: flex;
+  white-space: nowrap;
+  height: 80rpx;
+}
+.navItem{
+  padding: 0 20rpx;
+  font-size: 38rpx;
+}
+.navContent{
+  padding-bottom: 5rpx;
+  color: #797979;
+}
+.active{
+  border-bottom: 8rpx solid #7978f6;
+  color: #7978f6;
+}

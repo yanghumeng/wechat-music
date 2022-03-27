@@ -1,0 +1,44 @@
+<!-- pages/index/index.wxml -->
+<view class="indexContrailer">
+  <search></search>
+  <swiper class="banners" indicator-dots circular interval="2000" indicator-active-color="#b421ee"
+    indicator-color="ivory" next-margin="40rpx" previous-margin="40rpx" autoplay>
+    <swiper-item wx:for="{{bannerList}}" wx:key="targetId" skip-hidden-item-layout="true">
+      <image class="banners-image" src="{{item.pic}}" lazy-load="true"></image>
+    </swiper-item>
+  </swiper>
+  <ShowError wx:if="{{isShowError}}"></ShowError>
+  <!-- 五个图标 -->
+  <view class="navContainer">
+    <view class="navItem" wx:for="{{navcontainer}}" wx:for-item="item" wx:key="index">
+      <text id="{{index}}" bindtap="handelNavigateTo" class="indexicon iconfont {{item.icon}}"></text>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+  <view class="recommendContainer">
+    <NavHeader title="推荐歌曲" content="为你精心推荐"></NavHeader>
+    <ShowError wx:if="{{isShowError}}"></ShowError>
+    <scroll-view wx:else class="recommendScroll" enable-flex="true" scroll-x="true">
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id">
+        <image src="{{item.picUrl}}" mode="aspectFill" lazy-load="true"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="topList">
+    <NavHeader title="排行榜" content="热歌风向标"></NavHeader>
+    <swiper wx:if="{{topList.length>0}}" class="topListSwiper" next-margin="50rpx">
+      <swiper-item wx:for="{{topList}}" wx:for-item="topListItem" wx:key="index">
+        <view class="swiperItem">
+          <view class="title">{{topListItem.name}}</view>
+          <view class="musicItem" wx:for="{{topListItem.tracks}}" wx:for-item="musicItem" wx:key="id">
+            <image src="{{musicItem.al.picUrl}}" mode="aspectFill" lazy-load="true"></image>
+            <text class="count">{{index+1}}</text>
+            <text class="musicName">{{musicItem.name}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

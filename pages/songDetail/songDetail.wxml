@@ -1,0 +1,38 @@
+<!--pages/songDetail/songDetail.wxml-->
+<view class="songDetailContainer">
+  <view class="songDetailBg" style="background:url({{song.al.picUrl}});background-size: 100% 100%;">
+    <view class="bgBlur">
+    </view>
+  </view>
+  <musicHeader title="{{song.name}}"></musicHeader>
+  <view class="songDetailContent u-f-ac u-f-column">
+    <view class="author">{{song.ar[0].name}}</view>
+    <image class="needle {{isPlay && 'playactive'}}" src="../../static/images/song/needle.png"></image>
+    <!-- <view class="needleTr"></view> -->
+    <view class="discContainer {{isPlay && 'discAnimation'}}">
+      <image class="disc" src="../../static/images/song/disc.png"></image>
+      <image class="musicImage" src="{{song.al.picUrl}}" mode="aspectFill"></image>
+    </view>
+    <!-- 进度条 -->
+    <view class="progressControl u-f-ac">
+      <text>{{progressTime}}</text>
+      <!-- <view class="barControl">
+        <view class="audio-currentTime-Bar"></view> 
+      </view> -->
+      <slider class='barControl' step="1" min='0' max='{{duration}}' value="{{progress}}" activeColor="#ffffff"
+        block-size="12" backgroundColor="#9e9e9e" />
+      <text>{{durationTime}}</text>
+    </view>
+    <!-- 底部控制图标 -->
+    <view class="musicControl u-f">
+      <text class="iconfont icongengduo"></text>
+      <text class="iconfont icondiyigeshipin" id="pre" bindtap="handleSwitch"></text>
+      <view class="u-f1">
+        <text class="iconfont big {{isPlay?'iconstop':'iconplay-full'}}" bindtap="handleMusicPlay"></text>
+      </view>
+      <text class="iconfont iconzuihouyigeshipin" id="next" bindtap="handleSwitch"></text>
+      <text class="iconfont icongengduo1"></text>
+    </view>
+  </view>
+
+</view>
